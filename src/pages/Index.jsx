@@ -76,9 +76,21 @@ const Index = () => {
                   <option value="other">Other</option>
                 </Select>
               </FormControl>
-              <FormControl id="country" isRequired>
-                <FormLabel>Country</FormLabel>
-                <Input name="country" placeholder="USA" onChange={handleInputChange} />
+              <FormControl id="city" isRequired>
+                <FormLabel>City</FormLabel>
+                <Input name="city" placeholder="New York" onChange={handleInputChange} />
+              </FormControl>
+              <FormControl id="email" isRequired>
+                <FormLabel>Email</FormLabel>
+                <Input name="email" placeholder="john.doe@example.com" type="email" onChange={handleInputChange} />
+              </FormControl>
+              <FormControl id="cellphone" isRequired>
+                <FormLabel>Cellphone</FormLabel>
+                <Input name="cellphone" placeholder="+1-555-5555" type="tel" onChange={handleInputChange} />
+              </FormControl>
+              <FormControl id="profession" isRequired>
+                <FormLabel>Profession</FormLabel>
+                <Input name="profession" placeholder="Software Developer" onChange={handleInputChange} />
               </FormControl>
               <Button leftIcon={<FaUserPlus />} colorScheme="blue" onClick={handleSignUp}>
                 Sign Up
